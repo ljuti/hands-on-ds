@@ -4,8 +4,9 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, colors } from "design-system";
+import { Button, Icon, colors, Avatar } from "design-system";
 import { Link } from "react-router-dom";
+import avatarImg from "../assets/avatar.png"
 
 const data = require("../data/data.js");
 
@@ -14,7 +15,7 @@ const Home = () => {
     <div>
       <StyledDiv1>
         <StyledDiv2>
-          <StyledImage1 src={data.user.avatar} />
+          <Avatar src={avatarImg} />
           <Button isOutline>
             <Icon name="menu" />
           </Button>

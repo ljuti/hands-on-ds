@@ -2,6 +2,7 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
 
 import Product from ".";
+import productImage from "./productImage.png";
 
 <Meta title="Components/Product" />
 
@@ -10,7 +11,7 @@ import Product from ".";
 TODO: add component description
 
 <Canvas>
-  <Story name="Default" args={{name: "Nike Air Force 1", price: 9500}}>
+  <Story name="Default" args={{image: "/sampleImages/productImage.png", name: "Nike Air Force 1", price: 95}}>
     {(args) => <Product {...args} />}
   </Story>
 </Canvas>

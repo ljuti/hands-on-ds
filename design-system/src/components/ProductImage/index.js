@@ -11,9 +11,6 @@ const ProductImage = ({ src, width, props }) => {
 };
 
 export const StyledProductImage = styled.img`
-  // -webkit-box-shadow: 5px 10px 15px 5px rgba(0,0,0,0.32); 
-  // box-shadow: 5px 10px 15px 5px rgba(0,0,0,0.32);
-  // border-radius: 128px;
 `;
 
 export default ProductImage;

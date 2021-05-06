@@ -4,8 +4,7 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, colors, Avatar, H1, HomeHeader, PageBody, ProductsListNav } from "design-system";
-
+import { Button, Icon, colors, Avatar, H1, HomeHeader, PageBody, ProductsListNav, Product } from "design-system";
 import { Link } from "react-router-dom";
 // import avatarImg from "../../public/images/avatar.png"
 
@@ -39,17 +38,16 @@ const Home = () => {
             </StyledButton>
           </StyledDiv4>
         </ProductsListNav>
-        <StyledDiv5>
-          {Object.entries(data.products).map(([id, item]) => {
-            return (
-              <StyledLink key={id} to={`/details/${id}`}>
-                <StyledImg src={item.image} alt="" />
-                <h4>{item.name}</h4>
-                <StyledP>{item.price}</StyledP>
-              </StyledLink>
-            );
-          })}
-        </StyledDiv5>
+        <GridWrapper>
+          <StyledDiv5>
+            {Object.entries(data.products).map(([id, item]) => {
+              return (
+                <Product name={item.name} image={item.image} price={item.price}>
+                </Product>
+              );
+            })}
+          </StyledDiv5>
+        </GridWrapper>
       </PageBody>
     </div>
   );
@@ -87,8 +85,10 @@ const StyledDiv4 = styled.div`
 `;
 
 const StyledDiv5 = styled.div`
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px 24px;
 `;
 
@@ -124,6 +124,10 @@ const StyledP = styled.p`
   color: ${colors.primaryOrange100};
   font-weight: 700;
   margin-top: 8px;
+`;
+
+const GridWrapper = styled.div`
+  width: 100%;
 `;
 
 export default Home;

@@ -9,12 +9,25 @@ import tokens from "../../tokens/design-tokens.json";
  *
  * TODO: add component description
  */
-const Product = ({name, price, props}) => {
+const Product = ({image, name, price, props}) => {
   return <StyledProduct>
-    <ProductImage />
+    <ProductImage src={image} />
     <ProductTitle>{name}</ProductTitle>
-    <ProductPrice>{price}</ProductPrice>
+    <ProductPrice price={price}></ProductPrice>
   </StyledProduct>;
+};
+
+let formatPrice = function(input) {
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "EUR"
+  })
+  return formatter.format(input);
+}
+
+const ProductPrice = ({ price }) => {
+  const formatted = formatPrice(price);
+  return <StyledProductPrice>{formatted}</StyledProductPrice>
 };
 
 export const StyledProduct = styled.div`
@@ -26,7 +39,7 @@ export const ProductTitle = styled.h2`
   font-weight: 800;
 `;
 
-export const ProductPrice = styled.span`
+export const StyledProductPrice = styled.span`
   font-weight: 800;
   color: ${tokens.primary[500].value}
 `

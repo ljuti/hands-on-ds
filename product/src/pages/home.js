@@ -79,6 +79,7 @@ const StyledDiv3 = styled.div`
   justify-content: space-between;
   margin-bottom: 24px;
 `;
+
 const StyledDiv4 = styled.div`
   display: flex;
   align-items: center;

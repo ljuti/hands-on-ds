@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/hands-on-ds/static/js/main.a4494dd9.chunk.js",
+    "main.js.map": "/hands-on-ds/static/js/main.a4494dd9.chunk.js.map",
+    "runtime-main.js": "/hands-on-ds/static/js/runtime-main.875e661c.js",
+    "runtime-main.js.map": "/hands-on-ds/static/js/runtime-main.875e661c.js.map",
+    "static/css/2.f0d8f430.chunk.css": "/hands-on-ds/static/css/2.f0d8f430.chunk.css",
+    "static/js/2.06f7b6c3.chunk.js": "/hands-on-ds/static/js/2.06f7b6c3.chunk.js",
+    "static/js/2.06f7b6c3.chunk.js.map": "/hands-on-ds/static/js/2.06f7b6c3.chunk.js.map",
+    "index.html": "/hands-on-ds/index.html",
+    "static/css/2.f0d8f430.chunk.css.map": "/hands-on-ds/static/css/2.f0d8f430.chunk.css.map",
+    "static/js/2.06f7b6c3.chunk.js.LICENSE.txt": "/hands-on-ds/static/js/2.06f7b6c3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.875e661c.js",
+    "static/css/2.f0d8f430.chunk.css",
+    "static/js/2.06f7b6c3.chunk.js",
+    "static/js/main.a4494dd9.chunk.js"
+  ]
+}

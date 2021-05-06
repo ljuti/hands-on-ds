@@ -1,0 +1,16 @@
+
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+
+import Product from ".";
+
+<Meta title="Components/Product" />
+
+## Product
+
+TODO: add component description
+
+<Canvas>
+  <Story name="Default" args={{name: "Nike Air Force 1", price: 9500}}>
+    {(args) => <Product {...args} />}
+  </Story>
+</Canvas>

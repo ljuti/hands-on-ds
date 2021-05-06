@@ -3,14 +3,15 @@ import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
 
 import Avatar from ".";
 
+
 <Meta title="Components/Avatar" />
 
 ## Avatar
 
-TODO: add component description
+ Avatar displays user picture
 
-<Preview>
-  <Story name="Default">
-    <Avatar/>
+<Canvas>
+  <Story name="Default" args={{src: "/sampleImages/userImageSample.jpg"}}>
+    {(args) => <Avatar {...args}/>}
   </Story>
-</Preview>
+</Canvas>

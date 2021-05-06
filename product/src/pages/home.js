@@ -5,8 +5,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, Icon, colors, Avatar } from "design-system";
+import { H1 } from "design-system"
 import { Link } from "react-router-dom";
-import avatarImg from "../assets/avatar.png"
+// import avatarImg from "../../public/images/avatar.png"
 
 const data = require("../data/data.js");
 
@@ -15,12 +16,12 @@ const Home = () => {
     <div>
       <StyledDiv1>
         <StyledDiv2>
-          <Avatar src={avatarImg} />
+          <Avatar src={data.user.avatar} />
           <Button isOutline>
             <Icon name="menu" />
           </Button>
         </StyledDiv2>
-        <Styledh1>Store</Styledh1>
+        <H1>Store</H1>
 
         <StyledDiv3>
           <h4>All Product</h4>

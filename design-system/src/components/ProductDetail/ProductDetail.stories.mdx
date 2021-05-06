@@ -1,0 +1,18 @@
+
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+
+import ProductDetail from ".";
+import productImage from "./productImage.png";
+
+<Meta title="Components/ProductDetail" />
+
+
+## ProductDetail
+
+TODO: add component description
+
+<Canvas>
+  <Story name="Default" args={{ src: "/sampleImages/productImage.png", item: { name: "Hello", price: 125 }}}>
+    {(args) => <ProductDetail {...args} />}
+  </Story>
+</Canvas>

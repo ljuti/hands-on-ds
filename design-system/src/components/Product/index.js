@@ -35,7 +35,7 @@ display: flex;
 flex-direction: column;
 `;
 
-export const ProductTitle = styled.h2`
+export const ProductTitle = styled.h4`
   font-weight: 800;
 `;
 

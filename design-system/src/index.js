@@ -15,5 +15,6 @@ export { default as H1 } from "./components/H1";
 export { default as HomeHeader } from "./components/HomeHeader";
 export { default as Icon } from "./components/Icon";
 export { default as PageBody } from "./components/PageBody";
+export { default as ProductsListNav } from "./components/ProductsListNav";
 export { default as Select } from "./components/Select";
 export { default as SummaryTable } from "./components/SummaryTable";

@@ -7,10 +7,10 @@ import styled from "styled-components";
  * TODO: add component description
  */
 const H1 = (props) => {
-  return <StyledH1 />;
+  return <Styledh1 />;
 };
 
-const Styledh1 = styled.h1`
+export const Styledh1 = styled.h1`
   margin-bottom: 40px;
   letter-spacing: -1.6px;
 `;

@@ -6,9 +6,7 @@ import styled from "styled-components";
  *
  * TODO: add component description
  */
-const HomeHeader = (props) => {
-  return <StyledHomeHeader />;
-};
+const HomeHeader = ({ props, children }) => <StyledHomeHeader>{children}</StyledHomeHeader>
 
 
 export const StyledHomeHeader = styled.div`

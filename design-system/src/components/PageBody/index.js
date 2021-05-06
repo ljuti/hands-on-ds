@@ -7,9 +7,8 @@ import styled from "styled-components";
  * TODO: add component description
  */
 
-const PageBody = (props) => {
-  return <StyledPageBody />;
-};
+const PageBody = ({ props, children }) => <StyledPageBody>{children}</StyledPageBody>;
+;
 
 export const StyledPageBody = styled.div`
   padding: 64px 40px;

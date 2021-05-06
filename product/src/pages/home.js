@@ -4,8 +4,8 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, colors, Avatar } from "design-system";
-import { H1 } from "design-system"
+import { Button, Icon, colors, Avatar, H1, HomeHeader, PageBody, ProductsListNav } from "design-system";
+
 import { Link } from "react-router-dom";
 // import avatarImg from "../../public/images/avatar.png"
 
@@ -14,16 +14,16 @@ const data = require("../data/data.js");
 const Home = () => {
   return (
     <div>
-      <StyledDiv1>
-        <StyledDiv2>
+      <PageBody>
+        <HomeHeader>
           <Avatar src={data.user.avatar} />
           <Button isOutline>
             <Icon name="menu" />
           </Button>
-        </StyledDiv2>
+        </HomeHeader>
         <H1>Store</H1>
 
-        <StyledDiv3>
+        <ProductsListNav>
           <h4>All Product</h4>
 
           <StyledDiv4>
@@ -38,7 +38,7 @@ const Home = () => {
               <Icon name="filter" width={24} height={16} />
             </StyledButton>
           </StyledDiv4>
-        </StyledDiv3>
+        </ProductsListNav>
         <StyledDiv5>
           {Object.entries(data.products).map(([id, item]) => {
             return (
@@ -50,7 +50,7 @@ const Home = () => {
             );
           })}
         </StyledDiv5>
-      </StyledDiv1>
+      </PageBody>
     </div>
   );
 };
